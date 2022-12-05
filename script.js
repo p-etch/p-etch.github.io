@@ -1,5 +1,5 @@
 // Set the date
-var countDownDate =  new Date("January 1, 2023 18:30:00").getTime();
+var countDownDate =  new Date("January 1, 2023 00:00:00").getTime();
 
 // Update the count down
 var x = setInterval(function() {
@@ -42,7 +42,7 @@ var x = setInterval(function() {
 }, 10);
 
 
-var countDownDate3 =  new Date("December 25, 2022 12:00:00").getTime();
+var countDownDate3 =  new Date("December 25, 2022 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate3 - now;
