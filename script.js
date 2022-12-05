@@ -91,6 +91,13 @@ var month = d.getMonth() + 1;
 var day = d.getDate();
 document.getElementById("date").innerHTML += "<strong>" + month + " - " + day
                                            + " - " + year + "</strong>";
+document.getElementById("time").innerHTML = "<strong>" + ((d.getHours() + 11) % 12 + 1) + ":" 
+                                            + (d.getMinutes() < 10 ? "0":"") + d.getMinutes()
+                                            + (d.getHours() >= 12 ? "PM":"AM") + "</strong>";
 
-document.getElementById("time").innerHTML += "<strong>" + ((d.getHours() + 11) % 12 + 1) + ":" 
-                                           + d.getMinutes() + (d.getHours() >= 12 ? "PM":"AM") + "</strong>";
+// check if time changed
+var z = setInterval(function() {
+    document.getElementById("time").innerHTML = "<strong>" + ((d.getHours() + 11) % 12 + 1) + ":" 
+                                            + (d.getMinutes() < 10 ? "0":"") + d.getMinutes()
+                                            + (d.getHours() >= 12 ? "PM":"AM") + "</strong>";
+}, 30 * 100);
