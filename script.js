@@ -84,3 +84,13 @@ var x = setInterval(function() {
     }
   
 }, 10);
+
+var d =  new Date();
+var year = d.getFullYear();
+var month = d.getMonth() + 1;
+var day = d.getDate();
+document.getElementById("date").innerHTML += "<strong>" + month + " - " + day
+                                           + " - " + year + "</strong>";
+
+document.getElementById("time").innerHTML += "<strong>" + ((d.getHours() + 11) % 12 + 1) + ":" 
+                                           + d.getMinutes() + (d.getHours() >= 12 ? "PM":"AM") + "</strong>";

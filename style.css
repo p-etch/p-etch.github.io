@@ -32,7 +32,7 @@ body {
     flex-direction: row;
 }
 
-.left-bar-links {
+.left-bar-links, .date-time {
     padding-bottom: 3px;
     display: flex;
     height: 60px;
@@ -41,7 +41,15 @@ body {
     flex-direction: row;
 }
 
-.b-link {
+.date-time {
+    justify-content: center;
+    align-items: center;
+    margin: 0, auto;
+    font-size: 1.3rem;
+    background-color: rgb(28, 36, 51, 0.4);
+}
+
+.b-link, .time-c, .date-c {
     display: flex;
     width: 120px;
     height: 60px;
@@ -49,7 +57,11 @@ body {
     justify-content: center;
 }
 
-.b-link a {
+.time-c, .date-c {
+    width: 50% !important;
+}
+
+.b-link a, .date-time {
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -124,6 +136,13 @@ body {
 
 @media only screen and (max-width: 1080px)
 {
+    .date-time {
+        position: fixed;
+        top: 0;
+        width: calc(100% - 120px);
+        justify-content: space-evenly;
+        margin-left: 120px;
+    }
 
     .left-bar-links {
         height: 540px;
