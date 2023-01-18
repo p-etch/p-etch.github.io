@@ -22,7 +22,7 @@ var x = setInterval(function() {
   
 }, 10);
 
-var countDownDate2 =  new Date("January 18, 2023 12:00:00").getTime();
+var countDownDate2 =  new Date("March 24, 2023 12:00:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
