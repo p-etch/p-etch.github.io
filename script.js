@@ -1,5 +1,5 @@
 // Set the date
-var countDownDate =  new Date("July 25th, 2023 18:30:00").getTime();
+var countDownDate =  new Date("July 25, 2023 18:30:00").getTime();
 
 // Update the count down
 var x = setInterval(function() {
