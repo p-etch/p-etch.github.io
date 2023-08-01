@@ -61,19 +61,20 @@ var x = setInterval(function() {
   
 }, 10);
 
-var d =  new Date();
-var year = d.getFullYear();
-var month = d.getMonth() + 1;
-var day = d.getDate();
-document.getElementById("date").innerHTML += "<strong>" + month + " - " + day
-                                           + " - " + year + "</strong>";
-document.getElementById("time").innerHTML = "<strong>" + ((d.getHours() + 11) % 12 + 1) + ":" 
-                                            + (d.getMinutes() < 10 ? "0":"") + d.getMinutes()
-                                            + (d.getHours() >= 12 ? "PM":"AM") + "</strong>";
+// set date and time update every second
+var y = setInterval(function() {
+    var d = new Date();
+    var year = d.getFullYear();
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+    
+    document.getElementById("date").innerHTML = "<strong>" + month + " - " + day
+                                               + " - " + year + "</strong>";
+    document.getElementById("time").innerHTML = "<strong>" + ((d.getHours() + 11) % 12 + 1) + ":" 
+                                                + (d.getMinutes() < 10 ? "0":"") + d.getMinutes()
+                                                + (d.getHours() >= 12 ? "PM":"AM") + "</strong>";
 
-// check if time changed
-var z = setInterval(function() {
     document.getElementById("time").innerHTML = "<strong>" + ((d.getHours() + 11) % 12 + 1) + ":" 
                                             + (d.getMinutes() < 10 ? "0":"") + d.getMinutes()
                                             + (d.getHours() >= 12 ? "PM":"AM") + "</strong>";
-}, 30 * 100);
+}, 1000);
