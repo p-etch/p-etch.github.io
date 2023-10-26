@@ -42,7 +42,7 @@ var x = setInterval(function() {
 }, 10);
 
 
-var countDownDate3 =  new Date("October 28, 2022 00:00:00").getTime();
+var countDownDate3 =  new Date("October 28, 2023 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate3 - now;
