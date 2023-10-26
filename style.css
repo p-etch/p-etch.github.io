@@ -31,7 +31,7 @@ body {
     position: absolute;
 }
 
-#nav {
+nav {
     width: 100vw;
     height: 60px;
     font-size: 1.1rem;
@@ -165,7 +165,7 @@ footer {
         height: 60px;
     }
     
-    #nav {
+    nav {
         height: calc(100vh - 135.2px);
         width: 120px;
         flex-direction: column;
