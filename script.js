@@ -22,7 +22,7 @@ var x = setInterval(function() {
   
 }, 10);
 
-var countDownDate2 =  new Date("November 23, 2023 12:00:00").getTime();
+var countDownDate2 =  new Date("December 15, 2023 10:00:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -42,7 +42,7 @@ var x = setInterval(function() {
 }, 10);
 
 
-var countDownDate3 =  new Date("December 25, 2023 00:00:00").getTime();
+var countDownDate3 =  new Date("December 25, 2023 01:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate3 - now;
