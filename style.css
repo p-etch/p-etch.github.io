@@ -87,7 +87,7 @@ nav {
     color: rgb(205, 210, 214);
 }
 
-.count1, .count2, .count3 {
+.count {
     display: flex;
     height: 75px;
     width: 33.33%;
@@ -113,14 +113,14 @@ footer {
 
 @media only screen and (max-width: 1500px)
 {
-    .count1, .count2, .count3 {
+    .count {
             font-size: 95%;
     }
 }
 
 @media only screen and (max-width: 1400px)
 {
-    .count1, .count2, .count3 {
+    .count {
         font-size: 85%;
     }
 }
@@ -136,7 +136,7 @@ footer {
         height: 135.2px;
     }
 
-    .count1, .count2, .count3 {
+    .count {
         font-size: .75em;
         width: 100%;
         height: 100px;

@@ -1,5 +1,5 @@
 // Set the date
-var countDownDate =  new Date("November 28, 2023 12:00:00").getTime();
+var countDownDate =  new Date("November 28, 2026 00:00:00").getTime();
 
 // Update the count down
 var x = setInterval(function() {
@@ -11,18 +11,18 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Display the result in the element with id="cd-timer"
-    document.getElementById("cd-timer").innerHTML = days + "d " + hours + "h "
+    document.getElementById("cd-timer1").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
   
     // If the count down is finished, write congrats
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("cd-timer").innerHTML = "Congrats!";
+        document.getElementById("cd-timer1").innerHTML = "Congrats!";
     }
   
 }, 10);
 
-var countDownDate2 =  new Date("March 16, 2024 16:00:00").getTime();
+var countDownDate2 =  new Date("March 04, 2026 00:00:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -39,26 +39,6 @@ var x = setInterval(function() {
         clearInterval(x);
         document.getElementById("cd-timer2").innerHTML = "Congrats!";
     }
-}, 10);
-
-
-var countDownDate3 =  new Date("July 12, 2024 01:00:00").getTime();
-var x = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = countDownDate3 - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-    document.getElementById("cd-timer3").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-  
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("cd-timer3").innerHTML = "Congrats!";
-    }
-  
 }, 10);
 
 // set date and time update every second
