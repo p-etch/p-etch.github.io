@@ -22,7 +22,7 @@ var x = setInterval(function() {
   
 }, 10);
 
-var countDownDate2 =  new Date("March 04, 2026 00:00:00").getTime();
+var countDownDate2 =  new Date("October 28, 2025 00:00:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
