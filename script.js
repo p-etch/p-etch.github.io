@@ -14,10 +14,10 @@ var x = setInterval(function() {
     document.getElementById("cd-timer1").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
   
-    // If the count down is finished, write congrats
+    // If the count down is finished, write Yippee!
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("cd-timer1").innerHTML = "Congrats!";
+        document.getElementById("cd-timer1").innerHTML = "Yippee!";
     }
   
 }, 10);
@@ -37,7 +37,7 @@ var x = setInterval(function() {
   
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("cd-timer2").innerHTML = "Congrats!";
+        document.getElementById("cd-timer2").innerHTML = "Yippee!";
     }
 }, 10);
 
